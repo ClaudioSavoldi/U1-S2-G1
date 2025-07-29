@@ -118,11 +118,16 @@ console.log("8 è minore o uguale a 8", 8 <= 8);
 
 const name = "claudio";
 const height = 180;
-const eyeColor = "brown";
+const eyecolor = "yellow";
 const age = 23;
 
 console.log(name === "stefano" && height > 160 && eyecolor === "brown" && age >= 18);
 
 console.log(name === "stefano" || height > 160 || eyecolor === "brown");
 
-console.log( eyecolor ! "blue"||eyecolor ! "green"|| eyecolor ! "brown");
+console.log("colore degli occhi da escludere", !(eyecolor === "blue" || eyecolor === "green" || eyecolor === "brown"));
+
+// operatore ternario
+
+// condizione ? valore assegnato in caso true : valore assegnato in caso false
+console.log(age >= 18 ? "entra pure" : "non puoi entrare");
